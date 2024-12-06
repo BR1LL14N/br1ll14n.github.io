@@ -443,46 +443,6 @@ body{
         padding-top: 20px;
     }
 
-    .timeline li .timeline-panel {
-        width: 60%; /* Panel lebih kecil untuk tampilan mobile */
-        padding: 1rem; /* Padding lebih kecil agar tampilan lebih compact */
-        left: 10px; /* Geser panel sedikit ke kanan */
-    }
-
-    .timeline li .timeline-panel::before {
-        top: 50px; /* Posisi panah lebih tinggi */
-        right: -20px; /* Posisi panah mengarah ke kiri */
-        z-index: 1;
-    }
-
-    .timeline li .timeline-panel::after {
-        top: 51px;
-        right: -18px;
-        z-index: 2;
-    }
-
-    /* Timeline Inverted untuk layar 480px */
-    .timeline li.timeline-inverted .timeline-panel {
-        width: 60%;
-        left: auto; /* Mengatur panel ke kanan */
-    }
-
-    .timeline li.timeline-inverted .timeline-panel::before {
-        left: -20px;
-        right: auto;
-        z-index: 1;
-    }
-
-    .timeline li.timeline-inverted .timeline-panel::after {
-        left: -18px;
-        right: auto;
-        z-index: 2;
-    }
-
-    .timeline li .timeline-image {
-        width: 120px;
-        height: 120px;
-    }
 
 }
 
@@ -498,42 +458,6 @@ body{
         padding-top: 25px;
     }
 
-    .timeline li .timeline-panel {
-        width: 60%; /* Panel lebih kecil agar tampak proporsional pada layar kecil */
-        padding: 0.5rem; /* Mengurangi padding untuk tampilan lebih kompak */
-        left: -5px; /* Geser panel ke kiri sedikit */
-    }
-
-    .timeline li .timeline-panel::before {
-        top: 40px; /* Posisi panah lebih tinggi */
-        right: -15px; /* Mengatur posisi panah mengarah ke kiri */
-    }
-
-    .timeline li .timeline-panel::after {
-        top: 41px;
-        right: -13px;
-    }
-
-    /* Timeline Inverted untuk layar 320px */
-    .timeline li.timeline-inverted .timeline-panel {
-        width: 60%; /* Ukuran panel lebih kecil */
-        left: auto; /* Panel berada di sisi kanan */
-    }
-
-    .timeline li.timeline-inverted .timeline-panel::before {
-        left: -15px;
-        right: auto;
-    }
-
-    .timeline li.timeline-inverted .timeline-panel::after {
-        left: -13px;
-        right: auto;
-    }
-
-    .timeline li .timeline-image {
-        width: 100px;
-        height: 100px;
-    }
 
 }
 
