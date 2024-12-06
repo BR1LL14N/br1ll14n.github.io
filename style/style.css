@@ -443,6 +443,25 @@ body{
         padding-top: 20px;
     }
 
+    .timeline li .timeline-panel {
+        width: 60%;
+        padding: 0.8rem;
+    }
+
+    .timeline li .timeline-panel::before {
+        top: 50px;
+        right: -20px;
+    }
+
+    .timeline li .timeline-panel::after {
+        top: 51px;
+        right: -18px;
+    }
+
+    .timeline li .timeline-image {
+        width: 120px;
+        height: 120px;
+    }
 
 }
 
@@ -458,6 +477,25 @@ body{
         padding-top: 25px;
     }
 
+    .timeline li .timeline-panel {
+        width: 55%;
+        padding: 0.5rem;
+    }
+
+    .timeline li .timeline-panel::before {
+        top: 40px;
+        right: -15px;
+    }
+
+    .timeline li .timeline-panel::after {
+        top: 41px;
+        right: -13px;
+    }
+
+    .timeline li .timeline-image {
+        width: 100px;
+        height: 100px;
+    }
 
 }
 
