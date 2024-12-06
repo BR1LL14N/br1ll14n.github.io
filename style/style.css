@@ -446,6 +446,7 @@ body{
     .timeline li .timeline-panel {
         width: 60%;
         padding: 0.8rem;
+        float: left;
     }
 
     .timeline li .timeline-panel::before {
@@ -461,6 +462,20 @@ body{
     .timeline li .timeline-image {
         width: 120px;
         height: 120px;
+    }
+
+    .timeline li .timeline-panel::before {
+        border-right-width: 0; /* Menghilangkan border kanan */
+        border-left-width: 15px; /* Menambahkan border kiri */
+        right: auto;
+        left: -15px; /* Posisi panah mengarah ke gambar di sebelah kiri */
+    }
+    
+    .timeline li .timeline-panel::after {
+        border-right-width: 0; /* Menghilangkan border kanan */
+        border-left-width: 14px; /* Menambahkan border kiri */
+        right: auto;
+        left: -13px; /* Posisi panah mengarah ke gambar di sebelah kiri */
     }
 
 }
@@ -480,6 +495,7 @@ body{
     .timeline li .timeline-panel {
         width: 55%;
         padding: 0.5rem;
+        float: left;
     }
 
     .timeline li .timeline-panel::before {
@@ -497,5 +513,18 @@ body{
         height: 100px;
     }
 
+    .timeline li .timeline-panel::before {
+        border-right-width: 0; /* Menghilangkan border kanan */
+        border-left-width: 15px; /* Menambahkan border kiri */
+        right: auto;
+        left: -15px; /* Posisi panah mengarah ke gambar di sebelah kiri */
+    }
+    
+    .timeline li .timeline-panel::after {
+        border-right-width: 0; /* Menghilangkan border kanan */
+        border-left-width: 14px; /* Menambahkan border kiri */
+        right: auto;
+        left: -13px; /* Posisi panah mengarah ke gambar di sebelah kiri */
+    }
 }
 
