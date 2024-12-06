@@ -444,43 +444,45 @@ body{
     }
 
     .timeline {
-        padding: 0.5rem 0; /* Kurangi padding untuk menghemat ruang */
+        padding: 0.5rem 0;
     }
 
     .timeline::before {
-        left: 15px; /* Pindahkan garis tengah lebih ke kiri */
+        left: 10px; /* Garis tengah lebih dekat ke sisi kiri */
     }
 
     .timeline li .timeline-image {
-        width: 50px; /* Perkecil ukuran bubble gambar */
+        width: 50px; /* Perkecil ukuran bubble */
         height: 50px;
-        left: 5px; /* Sesuaikan posisi */
+        left: 5px; /* Geser bubble mendekati garis tengah */
         top: 0;
     }
 
     .timeline li .timeline-panel {
-        width: calc(100% - 80px); /* Kurangi lebar panel */
-        margin-left: 65px; /* Sesuaikan posisi dengan bubble gambar */
-        padding: 0.8rem; /* Perkecil padding panel */
+        width: calc(100% - 70px); /* Perkecil lebar panel */
+        margin-left: 60px; /* Sesuaikan jarak dengan bubble */
+        padding: 0.6rem; /* Kurangi padding dalam panel */
+        font-size: 0.85rem; /* Perkecil ukuran teks dalam panel */
+        line-height: 1.2; /* Atur spasi baris agar lebih rapat */
     }
 
     .timeline li .timeline-panel::before {
-        top: 20px; /* Posisikan segitiga lebih proporsional */
-        left: -15px; /* Geser segitiga untuk menyesuaikan */
+        top: 15px; /* Sesuaikan posisi segitiga */
+        left: -15px; 
     }
 
     .timeline li .timeline-panel::after {
-        top: 21px; /* Sesuaikan segitiga bagian dalam */
+        top: 16px;
         left: -13px;
     }
 
     .timeline li.timeline-inverted .timeline-panel {
-        margin-right: 65px; /* Sesuaikan untuk inverted panel */
+        margin-right: 60px; /* Sesuaikan jarak untuk inverted panel */
     }
 
     .timeline li.timeline-inverted .timeline-panel::before {
         left: auto;
-        right: -15px; /* Posisikan segitiga pada sisi kanan */
+        right: -15px;
     }
 
     .timeline li.timeline-inverted .timeline-panel::after {
@@ -502,48 +504,50 @@ body{
     }
 
     .timeline {
-        padding: 0.5rem 0; /* Kurangi padding untuk menghemat ruang */
+        padding: 0.4rem 0;
     }
 
     .timeline::before {
-        left: 15px; /* Pindahkan garis tengah lebih ke kiri */
+        left: 5px; /* Garis tengah lebih dekat ke sisi kiri */
     }
 
     .timeline li .timeline-image {
-        width: 50px; /* Perkecil ukuran bubble gambar */
-        height: 50px;
-        left: 5px; /* Sesuaikan posisi */
+        width: 40px; /* Perkecil ukuran bubble */
+        height: 40px;
+        left: 2px; /* Geser bubble lebih dekat ke garis tengah */
         top: 0;
     }
 
     .timeline li .timeline-panel {
-        width: calc(100% - 80px); /* Kurangi lebar panel */
-        margin-left: 65px; /* Sesuaikan posisi dengan bubble gambar */
-        padding: 0.8rem; /* Perkecil padding panel */
+        width: calc(100% - 55px); /* Lebar panel lebih kecil */
+        margin-left: 50px; /* Sesuaikan jarak dengan bubble */
+        padding: 0.5rem; /* Kurangi padding dalam panel */
+        font-size: 0.8rem; /* Perkecil ukuran teks dalam panel */
+        line-height: 1.15; /* Atur spasi baris lebih rapat */
     }
 
     .timeline li .timeline-panel::before {
-        top: 20px; /* Posisikan segitiga lebih proporsional */
-        left: -15px; /* Geser segitiga untuk menyesuaikan */
+        top: 12px; /* Sesuaikan posisi segitiga */
+        left: -12px;
     }
 
     .timeline li .timeline-panel::after {
-        top: 21px; /* Sesuaikan segitiga bagian dalam */
-        left: -13px;
+        top: 13px;
+        left: -10px;
     }
 
     .timeline li.timeline-inverted .timeline-panel {
-        margin-right: 65px; /* Sesuaikan untuk inverted panel */
+        margin-right: 50px; /* Sesuaikan jarak untuk inverted panel */
     }
 
     .timeline li.timeline-inverted .timeline-panel::before {
         left: auto;
-        right: -15px; /* Posisikan segitiga pada sisi kanan */
+        right: -12px;
     }
 
     .timeline li.timeline-inverted .timeline-panel::after {
         left: auto;
-        right: -13px;
+        right: -10px;
     }
 }
 
