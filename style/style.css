@@ -380,8 +380,13 @@ body{
         font-size: 60%;
     }
     .simply-countdown > .simply-section {
-        padding: 45px;
-        margin: 3px;
+        padding: 20px; /* Kurangi padding untuk layar kecil */
+        margin: 0 auto; /* Pusatkan elemen */
+        display: flex;
+        flex-wrap: wrap; /* Agar elemen menyesuaikan layout */
+        justify-content: center; /* Pusatkan elemen secara horizontal */
+        align-items: center; /* Pusatkan elemen secara vertikal */
+        max-width: 90%; /* Sesuaikan ukuran maksimal */
     }
     .mynavbar .nav-link{
         font-size: 1.3rem;
