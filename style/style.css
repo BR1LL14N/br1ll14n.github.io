@@ -443,39 +443,23 @@ body{
         padding-top: 20px;
     }
 
-    .timeline {
-        padding: 1rem 0;
-    }
-
-    .timeline li {
-        margin-bottom: 1rem;
-    }
-
-    .timeline li .timeline-image {
-        width: 120px;
-        height: 120px;
-        left: 50%;
-        transform: translateX(-50%); /* Gambar tetap di tengah */
-    }
-
     .timeline li .timeline-panel {
-        width: 60%; /* Ukuran panel yang lebih proporsional */
-        padding: 1.5rem;
-        border-radius: 8px;
+        width: 80%; /* Panel lebih besar agar tampak proporsional di mobile */
+        padding: 1rem; /* Pengurangan padding agar lebih pas */
     }
 
     .timeline li .timeline-panel::before {
-        top: 50px; /* Menyesuaikan posisi segitiga */
-        right: -10px;
+        top: 55px; /* Menyesuaikan posisi panah */
+        left: -10px; /* Mengatur posisi panah mengarah ke kiri */
     }
 
     .timeline li .timeline-panel::after {
-        top: 51px;
-        right: -8px;
+        top: 56px;
+        left: -8px;
     }
 
     .timeline li.timeline-inverted .timeline-panel {
-        width: 60%; /* Ukuran panel yang lebih proporsional */
+        width: 80%; /* Ukuran panel yang lebih besar */
     }
 
     .timeline li.timeline-inverted .timeline-panel::before {
@@ -501,39 +485,23 @@ body{
         padding-top: 25px;
     }
 
-    .timeline {
-        padding: 0.8rem 0;
-    }
-
-    .timeline li {
-        margin-bottom: 0.8rem;
-    }
-
-    .timeline li .timeline-image {
-        width: 100px;
-        height: 100px;
-        left: 50%;
-        transform: translateX(-50%); /* Gambar tetap di tengah */
-    }
-
     .timeline li .timeline-panel {
-        width: 70%; /* Ukuran panel yang lebih proporsional */
-        padding: 1rem;
-        border-radius: 8px;
+        width: 90%; /* Panel lebih besar agar tampak proporsional di layar yang lebih kecil */
+        padding: 0.8rem; /* Mengurangi padding agar lebih pas */
     }
 
     .timeline li .timeline-panel::before {
-        top: 40px; /* Menyesuaikan posisi segitiga */
-        right: -8px;
+        top: 45px; /* Menyesuaikan posisi panah */
+        left: -8px; /* Mengatur posisi panah mengarah ke kiri */
     }
 
     .timeline li .timeline-panel::after {
-        top: 41px;
-        right: -6px;
+        top: 46px;
+        left: -6px;
     }
 
     .timeline li.timeline-inverted .timeline-panel {
-        width: 70%; /* Ukuran panel yang lebih proporsional */
+        width: 90%; /* Ukuran panel lebih besar */
     }
 
     .timeline li.timeline-inverted .timeline-panel::before {
