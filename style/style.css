@@ -443,6 +443,21 @@ body{
         padding-top: 20px;
     }
 
+    .timeline {
+        padding: 0.4rem 0; /* Padding vertikal untuk timeline */
+    }
+
+    .timeline li .timeline-image {
+        width: 50px; /* Ukuran bubble lebih kecil */
+        height: 50px;
+        left: 0; /* Bubble sejajar dengan garis tengah */
+        top: 0;
+    }
+
+    .timeline li .timeline-panel {
+        width: calc(100% - 70px); /* Lebar panel teks menyesuaikan dengan bubble */
+        margin-left: 60px; /* Jarak antara bubble dan panel */
+    }
     
 }
 
@@ -456,6 +471,22 @@ body{
 
     .simply-countdown {
         padding-top: 25px;
+    }
+
+    .timeline {
+        padding: 0.4rem 0; /* Padding vertikal untuk timeline */
+    }
+
+    .timeline li .timeline-image {
+        width: 40px; /* Bubble lebih kecil */
+        height: 40px;
+        left: 0; /* Bubble tetap sejajar dengan garis tengah */
+        top: 0;
+    }
+
+    .timeline li .timeline-panel {
+        width: calc(100% - 55px); /* Lebar panel teks lebih kecil */
+        margin-left: 50px; /* Jarak antara bubble dan panel */
     }
 }
 
