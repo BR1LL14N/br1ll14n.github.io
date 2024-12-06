@@ -444,8 +444,8 @@ body{
     }
 
     .timeline li .timeline-panel {
-        width: 70%; /* Panel lebih kecil untuk tampilan yang lebih proporsional */
-        padding: 1rem; /* Padding lebih kecil agar tampilan lebih compact */
+        width: 80%; /* Panel lebih kecil untuk tampilan yang lebih proporsional */
+        padding: 0.8rem; /* Padding lebih kecil agar tampilan lebih compact */
     }
 
     .timeline li .timeline-panel::before {
@@ -486,8 +486,8 @@ body{
     }
 
     .timeline li .timeline-panel {
-        width: 80%; /* Panel lebih kecil agar tampak proporsional pada layar kecil */
-        padding: 0.8rem; /* Mengurangi padding untuk tampilan lebih kompak */
+        width: 90%; /* Panel lebih kecil agar tampak proporsional pada layar kecil */
+        padding: 0.5rem; /* Mengurangi padding untuk tampilan lebih kompak */
     }
 
     .timeline li .timeline-panel::before {
