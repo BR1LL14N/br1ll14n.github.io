@@ -388,6 +388,19 @@ body{
         align-items: center; /* Pusatkan elemen secara vertikal */
         max-width: 90%; /* Sesuaikan ukuran maksimal */
     }
+
+    .simply-countdown > .simply-section span {
+        font-size: 1rem; /* Sesuaikan ukuran font */
+    }
+
+    .simply-countdown > .simply-section span.simply-amount {
+        font-size: 1.2rem; /* Ukuran angka */
+    }
+    .simply-countdown > .simply-section span.simply-word {
+        font-size: 0.8rem; /* Ukuran label */
+        display: block; /* Atur label di bawah angka */
+    }
+
     .mynavbar .nav-link{
         font-size: 1.3rem;
         text-align: center;
