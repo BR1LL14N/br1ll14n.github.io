@@ -442,6 +442,51 @@ body{
     .simply-countdown {
         padding-top: 20px;
     }
+
+    .timeline {
+        padding: 0.5rem 0; /* Kurangi padding untuk menghemat ruang */
+    }
+
+    .timeline::before {
+        left: 15px; /* Pindahkan garis tengah lebih ke kiri */
+    }
+
+    .timeline li .timeline-image {
+        width: 50px; /* Perkecil ukuran bubble gambar */
+        height: 50px;
+        left: 5px; /* Sesuaikan posisi */
+        top: 0;
+    }
+
+    .timeline li .timeline-panel {
+        width: calc(100% - 80px); /* Kurangi lebar panel */
+        margin-left: 65px; /* Sesuaikan posisi dengan bubble gambar */
+        padding: 0.8rem; /* Perkecil padding panel */
+    }
+
+    .timeline li .timeline-panel::before {
+        top: 20px; /* Posisikan segitiga lebih proporsional */
+        left: -15px; /* Geser segitiga untuk menyesuaikan */
+    }
+
+    .timeline li .timeline-panel::after {
+        top: 21px; /* Sesuaikan segitiga bagian dalam */
+        left: -13px;
+    }
+
+    .timeline li.timeline-inverted .timeline-panel {
+        margin-right: 65px; /* Sesuaikan untuk inverted panel */
+    }
+
+    .timeline li.timeline-inverted .timeline-panel::before {
+        left: auto;
+        right: -15px; /* Posisikan segitiga pada sisi kanan */
+    }
+
+    .timeline li.timeline-inverted .timeline-panel::after {
+        left: auto;
+        right: -13px;
+    }
 }
 
 /* Untuk layar di bawah 320px */
