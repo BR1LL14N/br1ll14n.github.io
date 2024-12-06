@@ -455,7 +455,7 @@ body{
 
     .timeline li .timeline-panel::after {
         top: 51px;
-        left: -8px;
+        left: -9px;
     }
 
     .timeline li.timeline-inverted .timeline-panel {
@@ -468,7 +468,7 @@ body{
     }
 
     .timeline li.timeline-inverted .timeline-panel::after {
-        left: -8px;
+        left: -9px;
         right: auto;
     }
 }
@@ -492,12 +492,12 @@ body{
 
     .timeline li .timeline-panel::before {
         top: 40px; /* Posisi panah lebih tinggi */
-        left: -8px; /* Mengatur posisi panah mengarah ke kiri */
+        left: -10px; /* Mengatur posisi panah mengarah ke kiri */
     }
 
     .timeline li .timeline-panel::after {
         top: 41px;
-        left: -6px;
+        left: -9px;
     }
 
     .timeline li.timeline-inverted .timeline-panel {
@@ -505,12 +505,12 @@ body{
     }
 
     .timeline li.timeline-inverted .timeline-panel::before {
-        left: -8px;
+        left: -10px;
         right: auto;
     }
 
     .timeline li.timeline-inverted .timeline-panel::after {
-        left: -6px;
+        left: -9px;
         right: auto;
     }
 }
