@@ -386,6 +386,11 @@ body{
     }
 
     .countdown-container {
+        justify-content: center;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 100%;
         width: 90%; /* Sesuaikan lebar agar tetap proporsional */
         max-width: 400px; /* Batas maksimal */
         margin: 0 auto; /* Pusatkan elemen */
