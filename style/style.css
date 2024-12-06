@@ -380,9 +380,9 @@ body{
         font-size: 60%;
     }
     .simply-countdown > .simply-section {
-        padding: 45px;
-        margin: 3px;
-
+        padding: 10px; /* Kurangi padding dalam balon */
+        margin: 5px; /* Jarak antar elemen dalam balon */
+        text-align: center; /* Pusatkan teks */
     }
 
     .countdown-container {
@@ -393,6 +393,14 @@ body{
         border-radius: 15px; /* Tetap melengkung agar terlihat seperti balon */
         background-color: rgba(255, 255, 255, 0.8); /* Tambahkan transparansi */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+        border-radius: 10px;
+    }
+
+    .simply-countdown span.simply-amount {
+        font-size: 1rem; /* Ukuran angka */
+    }
+    .simply-countdown span.simply-word {
+        font-size: 0.8rem; /* Ukuran label */
     }
 
     .mynavbar .nav-link{
