@@ -380,25 +380,19 @@ body{
         font-size: 60%;
     }
     .simply-countdown > .simply-section {
-        padding: 20px; /* Kurangi padding untuk layar kecil */
+        padding: 45px;
+        margin: 3px;
+
+    }
+
+    .countdown-container {
+        width: 90%; /* Sesuaikan lebar agar tetap proporsional */
+        max-width: 400px; /* Batas maksimal */
         margin: 0 auto; /* Pusatkan elemen */
-        display: flex;
-        flex-wrap: wrap; /* Agar elemen menyesuaikan layout */
-        justify-content: center; /* Pusatkan elemen secara horizontal */
-        align-items: center; /* Pusatkan elemen secara vertikal */
-        max-width: 90%; /* Sesuaikan ukuran maksimal */
-    }
-
-    .simply-countdown > .simply-section span {
-        font-size: 1rem; /* Sesuaikan ukuran font */
-    }
-
-    .simply-countdown > .simply-section span.simply-amount {
-        font-size: 1.2rem; /* Ukuran angka */
-    }
-    .simply-countdown > .simply-section span.simply-word {
-        font-size: 0.8rem; /* Ukuran label */
-        display: block; /* Atur label di bawah angka */
+        padding: 15px; /* Kurangi padding untuk layar kecil */
+        border-radius: 15px; /* Tetap melengkung agar terlihat seperti balon */
+        background-color: rgba(255, 255, 255, 0.8); /* Tambahkan transparansi */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
     }
 
     .mynavbar .nav-link{
