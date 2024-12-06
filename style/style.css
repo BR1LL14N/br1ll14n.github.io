@@ -432,3 +432,28 @@ body{
     }
 }
 
+/* Untuk layar di bawah 480px */
+@media (max-width: 480px) {
+    .countdown-container {
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .simply-countdown {
+        padding-top: 20px;
+    }
+}
+
+/* Untuk layar di bawah 320px */
+@media (max-width: 320px) {
+    .countdown-container {
+        padding: 10px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .simply-countdown {
+        padding-top: 25px;
+    }
+}
+
