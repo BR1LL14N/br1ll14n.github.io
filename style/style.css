@@ -444,38 +444,32 @@ body{
     }
 
     .timeline li .timeline-panel {
-        width: 60%;
-        padding: 0.8rem;
-        float: left;
+        width: 60%; /* Panel lebih kecil untuk tampilan yang lebih proporsional */
+        padding: 0.8rem; /* Padding lebih kecil agar tampilan lebih compact */
+        float: left; /* Timeline biasa di sebelah kiri */
     }
-
-    .timeline li .timeline-panel::before {
-        top: 50px;
-        right: -20px;
-    }
-
-    .timeline li .timeline-panel::after {
-        top: 51px;
-        right: -18px;
-    }
-
-    .timeline li .timeline-image {
-        width: 120px;
-        height: 120px;
-    }
-
+    
     .timeline li .timeline-panel::before {
         border-right-width: 0; /* Menghilangkan border kanan */
         border-left-width: 15px; /* Menambahkan border kiri */
-        right: auto;
         left: -15px; /* Posisi panah mengarah ke gambar di sebelah kiri */
+        right: auto;
+        top: 50px; /* Posisi panah lebih tinggi */
+        z-index: 1;
     }
     
     .timeline li .timeline-panel::after {
         border-right-width: 0; /* Menghilangkan border kanan */
         border-left-width: 14px; /* Menambahkan border kiri */
+        left: -13px; /* Posisi panah lebih tinggi */
         right: auto;
-        left: -13px; /* Posisi panah mengarah ke gambar di sebelah kiri */
+        top: 51px;
+        z-index: 2;
+    }
+
+    .timeline li .timeline-image {
+        width: 120px;
+        height: 120px;
     }
 
 }
@@ -493,19 +487,25 @@ body{
     }
 
     .timeline li .timeline-panel {
-        width: 55%;
-        padding: 0.5rem;
-        float: left;
+        width: 60%; /* Panel lebih kecil agar tampak proporsional pada layar kecil */
+        padding: 0.5rem; /* Mengurangi padding untuk tampilan lebih kompak */
+        float: left; /* Timeline biasa di sebelah kiri */
     }
-
+    
     .timeline li .timeline-panel::before {
-        top: 40px;
-        right: -15px;
+        border-right-width: 0; /* Menghilangkan border kanan */
+        border-left-width: 15px; /* Menambahkan border kiri */
+        left: -15px; /* Posisi panah mengarah ke gambar di sebelah kiri */
+        right: auto;
+        top: 40px; /* Posisi panah lebih tinggi */
     }
-
+    
     .timeline li .timeline-panel::after {
+        border-right-width: 0; /* Menghilangkan border kanan */
+        border-left-width: 14px; /* Menambahkan border kiri */
+        left: -13px; /* Posisi panah lebih tinggi */
+        right: auto;
         top: 41px;
-        right: -13px;
     }
 
     .timeline li .timeline-image {
@@ -513,18 +513,5 @@ body{
         height: 100px;
     }
 
-    .timeline li .timeline-panel::before {
-        border-right-width: 0; /* Menghilangkan border kanan */
-        border-left-width: 15px; /* Menambahkan border kiri */
-        right: auto;
-        left: -15px; /* Posisi panah mengarah ke gambar di sebelah kiri */
-    }
-    
-    .timeline li .timeline-panel::after {
-        border-right-width: 0; /* Menghilangkan border kanan */
-        border-left-width: 14px; /* Menambahkan border kiri */
-        right: auto;
-        left: -13px; /* Posisi panah mengarah ke gambar di sebelah kiri */
-    }
 }
 
