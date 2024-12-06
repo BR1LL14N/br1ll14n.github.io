@@ -443,40 +443,7 @@ body{
         padding-top: 20px;
     }
 
-    .timeline li .timeline-panel {
-        width: 60%; /* Panel lebih kecil untuk tampilan proporsional */
-        padding: 0.8rem; /* Padding lebih kecil agar lebih kompak */
-    }
 
-    .timeline li .timeline-panel::before {
-        top: 40px; /* Posisi panah lebih tinggi */
-        right: -20px; /* Menyesuaikan posisi panah */
-        z-index: 1; /* Memastikan panah berada di atas elemen lainnya */
-    }
-
-    .timeline li .timeline-panel::after {
-        top: 41px; /* Sedikit lebih rendah untuk menumpuk */
-        right: -18px;
-        z-index: 2; /* Memastikan layer di atas layer sebelumnya */
-    }
-
-    .timeline li.timeline-inverted .timeline-panel {
-        width: 60%; /* Ukuran panel lebih kecil */
-    }
-
-    .timeline li.timeline-inverted .timeline-panel::before {
-        top: 40px; /* Posisi panah sejajar dengan timeline biasa */
-        left: -20px; /* Posisi panah mengarah ke kiri */
-        right: auto;
-        z-index: 1;
-    }
-
-    .timeline li.timeline-inverted .timeline-panel::after {
-        top: 41px; /* Sedikit lebih rendah untuk menumpuk */
-        left: -18px;
-        right: auto;
-        z-index: 2;
-    }
 }
 
 /* Untuk layar di bawah 320px */
@@ -491,39 +458,6 @@ body{
         padding-top: 25px;
     }
 
-    .timeline li .timeline-panel {
-        width: 55%; /* Panel lebih kecil agar tampak proporsional */
-        padding: 0.5rem; /* Padding lebih kecil untuk tampilan lebih kompak */
-    }
 
-    .timeline li .timeline-panel::before {
-        top: 30px; /* Posisi panah lebih tinggi */
-        right: -15px; /* Menyesuaikan posisi panah */
-        z-index: 1; /* Memastikan panah berada di atas elemen lainnya */
-    }
-
-    .timeline li .timeline-panel::after {
-        top: 31px; /* Sedikit lebih rendah untuk menumpuk */
-        right: -13px;
-        z-index: 2; /* Memastikan layer di atas layer sebelumnya */
-    }
-
-    .timeline li.timeline-inverted .timeline-panel {
-        width: 55%; /* Ukuran panel lebih kecil */
-    }
-
-    .timeline li.timeline-inverted .timeline-panel::before {
-        top: 30px; /* Posisi panah sejajar dengan timeline biasa */
-        left: -15px; /* Posisi panah mengarah ke kiri */
-        right: auto;
-        z-index: 1;
-    }
-
-    .timeline li.timeline-inverted .timeline-panel::after {
-        top: 31px; /* Sedikit lebih rendah untuk menumpuk */
-        left: -13px;
-        right: auto;
-        z-index: 2;
-    }
 }
 
