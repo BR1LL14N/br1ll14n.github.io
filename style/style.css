@@ -444,17 +444,49 @@ body{
     }
 
     .timeline {
-        padding: 1rem 0; /* Padding vertikal untuk timeline */
+        padding: 1rem 0;
+    }
+
+    .timeline li {
+        margin-bottom: 1rem;
     }
 
     .timeline li .timeline-image {
-        left: 50%; /* Bubble tetap di tengah */
-        transform: translateX(-50%);
+        width: 120px;
+        height: 120px;
+        left: 0;
+        transform: translateX(0); /* Posisi gambar di kiri */
     }
 
     .timeline li .timeline-panel {
-        width: 80%; /* Lebar panel lebih proporsional */
-        margin-left: 0; /* Menghilangkan margin kiri agar pas dengan bubble */
+        width: 70%; /* Membuat panel lebih lebar */
+        float: left;
+        padding: 1.5rem;
+        border-radius: 8px;
+    }
+
+    .timeline li .timeline-panel::before {
+        top: 50px; /* Menyesuaikan posisi segitiga */
+        right: -10px;
+    }
+
+    .timeline li .timeline-panel::after {
+        top: 51px;
+        right: -8px;
+    }
+
+    .timeline li.timeline-inverted .timeline-panel {
+        float: left; /* Semua timeline di sebelah kiri */
+    }
+
+    .timeline li.timeline-inverted .timeline-panel::before {
+        left: -10px;
+        right: auto;
+    }
+
+    .timeline li.timeline-inverted .timeline-panel::after {
+        left: -8px;
+        right: auto;
     }
 }
 
@@ -471,17 +503,49 @@ body{
     }
 
     .timeline {
-        padding: 0.8rem 0; /* Padding vertikal lebih kecil untuk layar lebih kecil */
+        padding: 0.8rem 0;
+    }
+
+    .timeline li {
+        margin-bottom: 0.8rem;
     }
 
     .timeline li .timeline-image {
-        left: 50%; /* Bubble tetap di tengah */
-        transform: translateX(-50%);
+        width: 100px;
+        height: 100px;
+        left: 0;
+        transform: translateX(0); /* Posisi gambar di kiri */
     }
 
     .timeline li .timeline-panel {
-        width: 90%; /* Panel hampir memenuhi lebar layar */
-        margin-left: 0; /* Menghilangkan margin kiri agar pas dengan bubble */
+        width: 80%; /* Membuat panel lebih lebar */
+        float: left;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .timeline li .timeline-panel::before {
+        top: 40px; /* Menyesuaikan posisi segitiga */
+        right: -8px;
+    }
+
+    .timeline li .timeline-panel::after {
+        top: 41px;
+        right: -6px;
+    }
+
+    .timeline li.timeline-inverted .timeline-panel {
+        float: left; /* Semua timeline di sebelah kiri */
+    }
+
+    .timeline li.timeline-inverted .timeline-panel::before {
+        left: -8px;
+        right: auto;
+    }
+
+    .timeline li.timeline-inverted .timeline-panel::after {
+        left: -6px;
+        right: auto;
     }
 }
 
