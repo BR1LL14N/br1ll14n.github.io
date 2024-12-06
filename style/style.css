@@ -444,21 +444,18 @@ body{
     }
 
     .timeline {
-        padding: 0.4rem 0; /* Padding vertikal untuk timeline */
+        padding: 1rem 0; /* Padding vertikal untuk timeline */
     }
 
     .timeline li .timeline-image {
-        width: 50px; /* Ukuran bubble lebih kecil */
-        height: 50px;
-        left: 0; /* Bubble sejajar dengan garis tengah */
-        top: 0;
+        left: 50%; /* Bubble tetap di tengah */
+        transform: translateX(-50%);
     }
 
     .timeline li .timeline-panel {
-        width: calc(100% - 70px); /* Lebar panel teks menyesuaikan dengan bubble */
-        margin-left: 60px; /* Jarak antara bubble dan panel */
+        width: 80%; /* Lebar panel lebih proporsional */
+        margin-left: 0; /* Menghilangkan margin kiri agar pas dengan bubble */
     }
-    
 }
 
 /* Untuk layar di bawah 320px */
@@ -474,19 +471,17 @@ body{
     }
 
     .timeline {
-        padding: 0.4rem 0; /* Padding vertikal untuk timeline */
+        padding: 0.8rem 0; /* Padding vertikal lebih kecil untuk layar lebih kecil */
     }
 
     .timeline li .timeline-image {
-        width: 40px; /* Bubble lebih kecil */
-        height: 40px;
-        left: 0; /* Bubble tetap sejajar dengan garis tengah */
-        top: 0;
+        left: 50%; /* Bubble tetap di tengah */
+        transform: translateX(-50%);
     }
 
     .timeline li .timeline-panel {
-        width: calc(100% - 55px); /* Lebar panel teks lebih kecil */
-        margin-left: 50px; /* Jarak antara bubble dan panel */
+        width: 90%; /* Panel hampir memenuhi lebar layar */
+        margin-left: 0; /* Menghilangkan margin kiri agar pas dengan bubble */
     }
 }
 
