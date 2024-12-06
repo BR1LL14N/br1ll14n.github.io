@@ -444,6 +444,8 @@ body{
     }
 
     .timeline li .timeline-panel {
+        margin-left: 0;
+        margin-right: auto;
         width: 60%; /* Panel lebih kecil untuk tampilan yang lebih proporsional */
         padding: 0.8rem; /* Padding lebih kecil agar tampilan lebih compact */
         float: left; /* Timeline biasa di sebelah kiri */
