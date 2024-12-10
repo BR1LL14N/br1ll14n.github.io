@@ -444,21 +444,21 @@ body{
     }
 
     .timeline li .timeline-image{
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
     }
 
     .timeline li .timeline-panel{
-        width: 50%;
+        width: 65%;
         transform: translateX(-10px);
     }
 
     .timeline li .timeline-panel::before{
-        top: 20px;
+        top: 30px;
     }
 
     .timeline li .timeline-panel::after{
-        top: 21px;
+        top: 31px;
     }
 }
 
@@ -475,12 +475,12 @@ body{
     }
 
     .timeline li .timeline-image{
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
     }
 
     .timeline li .timeline-panel{
-        width: 45%;
+        width: 60%;
         transform: translateX(-10px);
     }
 
