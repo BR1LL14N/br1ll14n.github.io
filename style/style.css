@@ -444,8 +444,8 @@ body{
     }
 
     .timeline li .timeline-image{
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
     }
 
     .timeline li .timeline-panel{
@@ -475,8 +475,8 @@ body{
     }
 
     .timeline li .timeline-image{
-        width: 40px;
-        height: 40px;
+        width: 80px;
+        height: 80px;
     }
 
     .timeline li .timeline-panel{
