@@ -9,6 +9,7 @@ body{
     font-size: 1.2rem;
     font-family: 'Work-Sans', sans-serif;
     min-height: 2000px;
+    overflow: hidden;
 }
 
 .hero::before{
@@ -68,8 +69,9 @@ body{
 }
 
 .offcanvas{
-    overflow: hidden;
-    max-width: 100%;
+    visibility: visible !important; /* Pastikan elemen terlihat */
+    opacity: 1 !important; /* Pastikan opacity penuh */
+    transform: none !important; /* Pastikan elemen tidak tersembunyi */
 }
 
 .mynavbar .navbar-brand, 

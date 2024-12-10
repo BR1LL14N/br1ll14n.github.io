@@ -307,15 +307,15 @@
     </script>
 
     <script>
-        const body = document.body;
         const offCanvas = document.querySelector('.offcanvas');
 
+        // Tambahkan logika untuk memastikan offcanvas muncul dengan benar
         offCanvas.addEventListener('show.bs.offcanvas', function () {
-            body.style.overflow = 'hidden'; // Membatasi scroll pada body
+            document.body.style.overflow = 'hidden';
         });
 
         offCanvas.addEventListener('hidden.bs.offcanvas', function () {
-            body.style.overflow = ''; // Mengembalikan ke default
+            document.body.style.overflow = '';
         });
     </script>
 
