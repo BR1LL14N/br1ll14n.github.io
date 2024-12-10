@@ -38,7 +38,7 @@
 
     <!-- NAVBAR -->
 
-    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+    <nav class="navbar navbar-expand-md bg-transparent sticky-navbar mynavbar">
         <div class="container">
             <a class="navbar-brand" href="#">Wedding of Me</a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -307,16 +307,33 @@
     </script>
 
     <script>
-        const stickyTop = document.querySelector('.sticky-top');
-        const offCanvas = document.querySelector('.offcanvas');
+      // Ambil elemen navbar dan hero
+    const navbar = document.querySelector('.navbar');
+    const heroSection = document.querySelector('#hero');
 
-        offCanvas.addEventListener('show.bs.offcanvas', function(){
-            stickyTop.style.overflow = 'visible';
-        })
+    // Tentukan tinggi hero dan navbar
+    const heroHeight = heroSection.offsetHeight;
+    const navbarHeight = navbar.offsetHeight;
 
-        offCanvas.addEventListener('hidden.bs.offcanvas', function(){
-            stickyTop.style.overflow = 'hidden';
-        })
+    // Function untuk menangani scroll
+    function handleScroll() {
+        // Jika scroll lebih dari tinggi hero, aktifkan sticky navbar
+        if (window.scrollY >= heroHeight) {
+            navbar.classList.add('sticky-navbar');
+            document.body.classList.add('sticky-navbar-active');
+        } else {
+            navbar.classList.remove('sticky-navbar');
+            document.body.classList.remove('sticky-navbar-active');
+        }
+    }
+
+    // Event listener untuk scroll
+    window.addEventListener('scroll', handleScroll);
+
+    // Jika halaman pertama kali dimuat dan sudah ada scroll
+    document.addEventListener('DOMContentLoaded', function() {
+        handleScroll();
+    });
     </script>
 
     <script>

@@ -58,6 +58,27 @@ body{
     color: white;
 }
 
+/* Navbar pada posisi default */
+.navbar {
+    position: relative;
+    z-index: 1000;
+}
+
+/* Sticky navbar */
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: all 0.3s;
+}
+
+/* Memberikan padding untuk konten agar tidak tertutup navbar */
+body.sticky-navbar-active {
+    padding-top: 80px; /* Sesuaikan dengan tinggi navbar */
+}
+
 .mynavbar{
     background-color: rgba(255,255,255,0.3) !important;
     backdrop-filter: blur(4px);
