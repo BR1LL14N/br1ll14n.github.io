@@ -307,16 +307,16 @@
     </script>
 
     <script>
-        const stickyTop = document.querySelector('.sticky-top');
+        const body = document.body;
         const offCanvas = document.querySelector('.offcanvas');
 
-        offCanvas.addEventListener('show.bs.offcanvas', function(){
-            stickyTop.style.overflow = 'visible';
-        })
+        offCanvas.addEventListener('show.bs.offcanvas', function () {
+            body.style.overflow = 'hidden'; // Membatasi scroll pada body
+        });
 
-        offCanvas.addEventListener('hidden.bs.offcanvas', function(){
-            stickyTop.style.overflow = 'hidden';
-        })
+        offCanvas.addEventListener('hidden.bs.offcanvas', function () {
+            body.style.overflow = ''; // Mengembalikan ke default
+        });
     </script>
 
     <script>

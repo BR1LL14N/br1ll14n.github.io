@@ -67,6 +67,11 @@ body{
     height: 100vh;
 }
 
+.offcanvas{
+    overflow: hidden;
+    max-width: 100%;
+}
+
 .mynavbar .navbar-brand, 
 .mynavbar .offcanvas-title{
     font-family: 'Sacramento', cursive;
