@@ -307,16 +307,16 @@
     </script>
 
     <script>
+        const stickyTop = document.querySelector('.sticky-top');
         const offCanvas = document.querySelector('.offcanvas');
-        const body = document.body;
 
-        offCanvas.addEventListener('show.bs.offcanvas', function () {
-            body.classList.add('offcanvas-open');
-        });
+        offCanvas.addEventListener('show.bs.offcanvas', function(){
+            stickyTop.style.overflow = 'visible';
+        })
 
-        offCanvas.addEventListener('hidden.bs.offcanvas', function () {
-            body.classList.remove('offcanvas-open');
-        });
+        offCanvas.addEventListener('hidden.bs.offcanvas', function(){
+            stickyTop.style.overflow = 'hidden';
+        })
     </script>
 
     <script>
