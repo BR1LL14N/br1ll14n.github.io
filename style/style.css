@@ -9,7 +9,6 @@ body{
     font-size: 1.2rem;
     font-family: 'Work-Sans', sans-serif;
     min-height: 2000px;
-    overflow: hidden;
 }
 
 .hero::before{
@@ -68,11 +67,6 @@ body{
     height: 100vh;
 }
 
-.offcanvas{
-    visibility: visible !important; /* Pastikan elemen terlihat */
-    opacity: 1 !important; /* Pastikan opacity penuh */
-    transform: none !important; /* Pastikan elemen tidak tersembunyi */
-}
 
 .mynavbar .navbar-brand, 
 .mynavbar .offcanvas-title{
