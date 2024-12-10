@@ -435,6 +435,40 @@ body{
 
 /* Untuk layar di bawah 480px */
 @media (max-width: 480px) {
+
+    /* Memastikan offcanvas muncul dengan benar */
+    .offcanvas {
+        transform: translateX(100%); /* Posisi awal offcanvas di luar layar */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .offcanvas.show {
+        transform: translateX(0); /* Offcanvas masuk ke layar */
+    }
+
+    /* Mengatur body agar tidak bergeser saat offcanvas muncul */
+    body.offcanvas-open {
+        overflow: hidden; /* Mencegah scroll pada halaman utama */
+        position: fixed;
+        width: 100%;
+    }
+
+    /* Tampilan backdrop offcanvas */
+    .offcanvas-backdrop {
+        background-color: rgba(0, 0, 0, 0.5); /* Warna backdrop */
+    }
+
+    /* Menyesuaikan posisi menu agar pas saat offcanvas aktif */
+    .offcanvas-body .navbar-nav {
+        padding: 1rem 0;
+    }
+
+    /* Memastikan menu offcanvas tampil dengan benar pada ukuran kecil */
+    .offcanvas-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .countdown-container {
         align-items: center;
         justify-content: flex-start;
@@ -465,6 +499,41 @@ body{
 
 /* Untuk layar di bawah 320px */
 @media (max-width: 320px) {
+
+    /* Memastikan offcanvas muncul dengan benar */
+    .offcanvas {
+        transform: translateX(100%); /* Posisi awal offcanvas di luar layar */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .offcanvas.show {
+        transform: translateX(0); /* Offcanvas masuk ke layar */
+    }
+
+    /* Mengatur body agar tidak bergeser saat offcanvas muncul */
+    body.offcanvas-open {
+        overflow: hidden; /* Mencegah scroll pada halaman utama */
+        position: fixed;
+        width: 100%;
+    }
+
+    /* Tampilan backdrop offcanvas */
+    .offcanvas-backdrop {
+        background-color: rgba(0, 0, 0, 0.5); /* Warna backdrop */
+    }
+
+    /* Menyesuaikan posisi menu agar pas saat offcanvas aktif */
+    .offcanvas-body .navbar-nav {
+        padding: 0.5rem 0;
+    }
+
+    /* Memastikan header offcanvas lebih kompak pada ukuran sangat kecil */
+    .offcanvas-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
     .countdown-container {
         padding: 10px;
         align-items: center;
